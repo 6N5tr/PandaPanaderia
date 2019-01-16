@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:title="Home" android:icon="@drawable/ic_home_grey600_18dp"
+    <item android:title="Inicio" android:icon="@drawable/ic_home_grey600_18dp"
           android:id="@+id/nav_home" />
-    <item android:title="Registro" android:icon="@drawable/ic_account_balance_wallet_grey600_18dp"
+    <item android:title="Ventas" android:icon="@drawable/ic_account_balance_wallet_grey600_18dp"
           android:id="@+id/nav_ventas"/>
-    <item android:title="Ajustes" android:icon="@drawable/ic_extension_grey600_18dp"
+    <item android:title="Productos" android:icon="@drawable/ic_extension_grey600_18dp"
           android:id="@+id/nav_productos"/>
 
 

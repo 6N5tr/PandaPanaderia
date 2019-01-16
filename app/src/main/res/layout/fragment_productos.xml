@@ -9,6 +9,92 @@
     <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/hello_blank_fragment"/>
+            android:text="@string/frg3"/>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:layout_alignParentStart="true" android:layout_marginStart="111dp"
+                android:layout_alignParentTop="true" android:id="@+id/eTCPro" android:layout_marginTop="142dp"
+                android:hint="Cantidad Producto"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:layout_alignParentStart="true" android:layout_marginStart="29dp"
+                android:layout_alignParentTop="true" android:id="@+id/eTCPro2" android:layout_marginTop="422dp"
+                android:hint="Buscar Producto"/>
+        <TextView
+                android:text="@string/NPro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/tvNombreProducto"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="38dp" android:layout_alignParentTop="true" android:layout_marginTop="39dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/tvPrecio" android:layout_alignParentStart="true"
+                android:layout_marginStart="42dp" android:layout_alignParentTop="true" android:layout_marginTop="95dp"
+                android:text="@string/PPro"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/tvCantidadProducto"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="33dp" android:layout_alignParentTop="true" android:layout_marginTop="156dp"
+                android:text="@string/CPro"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:layout_alignParentStart="true" android:layout_marginStart="107dp"
+                android:layout_alignParentTop="true" android:id="@+id/eTNPro" android:layout_marginTop="13dp"
+                android:hint="Nombre Producto"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:layout_alignParentStart="true" android:layout_marginStart="110dp"
+                android:layout_alignParentTop="true" android:id="@+id/eTPPro" android:layout_marginTop="81dp"
+                android:hint="Precio Producto"/>
+        <Button
+                android:text="@string/AgrePro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_alignParentStart="true"
+                android:layout_marginStart="60dp" android:layout_alignParentBottom="true"
+                android:id="@+id/btAgregarProducto"
+                android:layout_marginBottom="239dp"/>
+        <Button
+                android:text="@string/VerPro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_alignParentStart="true"
+                android:layout_marginStart="236dp" android:layout_alignParentBottom="true"
+                android:id="@+id/btVerProductos"
+                android:layout_marginBottom="243dp"/>
+        <Button
+                android:text="@string/ActuPro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:id="@+id/btActualizarProducto"
+                android:layout_alignStart="@+id/tvPrecio" android:layout_marginBottom="155dp"
+                android:layout_marginStart="16dp"/>
+        <Button
+                android:text="@string/BorrPro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_alignBottom="@+id/btActualizarProducto"
+                android:layout_alignEnd="@+id/btVerProductos" android:id="@+id/btEliminarProducto"/>
+        <Button
+                android:text="@string/BusPro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_alignParentEnd="true"
+                android:layout_marginEnd="47dp" android:layout_alignParentBottom="true"
+                android:id="@+id/btBuscarProducto"
+                android:layout_marginBottom="41dp"/>
+    </RelativeLayout>
 
 </FrameLayout>
