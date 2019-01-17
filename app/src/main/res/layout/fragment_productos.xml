@@ -1,100 +1,148 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:tools="http://schemas.android.com/tools"
+             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
-             tools:context=".ProductosFragment">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/frg3"/>
-    <RelativeLayout
+             tools:context=".ProductosFragment" android:id="@+id/frameLayout">
+    <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-        <EditText
+        <Button
+                android:text="@string/AgrePro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/btAgrPro"
+                android:layout_marginTop="234dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="60dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp" app:layout_constraintHorizontal_bias="0.007"
+                android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0.0" app:layout_constraintTop_toTopOf="parent"/>
+        <Button
+                android:text="@string/BorrPro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/btBorPro"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="101dp"
+                android:layout_marginTop="224dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0.022"/>
+        <Button
+                android:text="@string/ActuPro"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:inputType="textPersonName"
-                android:ems="10"
-                android:layout_alignParentStart="true" android:layout_marginStart="111dp"
-                android:layout_alignParentTop="true" android:id="@+id/eTCPro" android:layout_marginTop="142dp"
-                android:hint="Cantidad Producto"/>
-        <EditText
+                android:id="@+id/btActPro" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="62dp" android:layout_marginTop="309dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="261dp" android:layout_marginBottom="374dp"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintVertical_bias="0.0" app:layout_constraintTop_toTopOf="parent"/>
+        <Button
+                android:text="@string/VerPro"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:inputType="textPersonName"
-                android:ems="10"
-                android:layout_alignParentStart="true" android:layout_marginStart="29dp"
-                android:layout_alignParentTop="true" android:id="@+id/eTCPro2" android:layout_marginTop="422dp"
-                android:hint="Buscar Producto"/>
+                android:layout_height="wrap_content" android:id="@+id/btVerProd"
+                android:layout_marginStart="72dp" app:layout_constraintStart_toEndOf="@+id/btActPro"
+                android:layout_marginTop="309dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="101dp"
+                android:layout_marginBottom="374dp" app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="1.0" app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintTop_toTopOf="parent"/>
         <TextView
                 android:text="@string/NPro"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/tvNombreProducto"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="38dp" android:layout_alignParentTop="true" android:layout_marginTop="39dp"/>
+                android:layout_height="wrap_content"
+                android:id="@+id/tvNomPro" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp" app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="39dp" android:layout_marginBottom="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="336dp" app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="1.0" app:layout_constraintVertical_bias="0.006"/>
         <TextView
+                android:text="@string/PPro"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/tvPrecio" android:layout_alignParentStart="true"
-                android:layout_marginStart="42dp" android:layout_alignParentTop="true" android:layout_marginTop="95dp"
-                android:text="@string/PPro"/>
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="16dp" android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="336dp" android:layout_marginBottom="8dp"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="0.132"/>
         <TextView
+                android:text="@string/CPro"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/tvCantidadProducto"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="33dp" android:layout_alignParentTop="true" android:layout_marginTop="156dp"
-                android:text="@string/CPro"/>
+                android:layout_height="wrap_content"
+                android:id="@+id/textView5" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="16dp" android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp" android:layout_marginBottom="8dp"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="0.229"
+                app:layout_constraintEnd_toEndOf="parent"/>
         <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
                 android:ems="10"
-                android:layout_alignParentStart="true" android:layout_marginStart="107dp"
-                android:layout_alignParentTop="true" android:id="@+id/eTNPro" android:layout_marginTop="13dp"
+                android:id="@+id/etCantidad" android:layout_marginTop="149dp" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintHorizontal_bias="0.489" app:layout_constraintVertical_bias="0.015"
+                app:layout_constraintBottom_toBottomOf="parent" android:hint="Cantidad Producto"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/etPrecio"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="101dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintStart_toEndOf="@+id/textView3" android:layout_marginStart="97dp"
+                android:layout_marginTop="88dp" app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintVertical_bias="0.0" app:layout_constraintStart_toStartOf="parent"
+                android:hint="Precio Producto"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/etNombre"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="28dp" app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_bias="0.489" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.0"
                 android:hint="Nombre Producto"/>
         <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
                 android:ems="10"
-                android:layout_alignParentStart="true" android:layout_marginStart="110dp"
-                android:layout_alignParentTop="true" android:id="@+id/eTPPro" android:layout_marginTop="81dp"
-                android:hint="Precio Producto"/>
+                android:id="@+id/etBuscarProducto"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+                android:layout_marginTop="91dp" app:layout_constraintTop_toBottomOf="@+id/btActPro"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="182dp"
+                android:layout_marginBottom="238dp" app:layout_constraintBottom_toBottomOf="parent"
+                android:hint="Buscar Producto"/>
         <Button
-                android:text="@string/AgrePro"
+                android:text="Button"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:layout_alignParentStart="true"
-                android:layout_marginStart="60dp" android:layout_alignParentBottom="true"
-                android:id="@+id/btAgregarProducto"
-                android:layout_marginBottom="239dp"/>
-        <Button
-                android:text="@string/VerPro"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:layout_alignParentStart="true"
-                android:layout_marginStart="236dp" android:layout_alignParentBottom="true"
-                android:id="@+id/btVerProductos"
-                android:layout_marginBottom="243dp"/>
-        <Button
-                android:text="@string/ActuPro"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:id="@+id/btActualizarProducto"
-                android:layout_alignStart="@+id/tvPrecio" android:layout_marginBottom="155dp"
-                android:layout_marginStart="16dp"/>
-        <Button
-                android:text="@string/BorrPro"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:layout_alignBottom="@+id/btActualizarProducto"
-                android:layout_alignEnd="@+id/btVerProductos" android:id="@+id/btEliminarProducto"/>
-        <Button
-                android:text="@string/BusPro"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:layout_alignParentEnd="true"
-                android:layout_marginEnd="47dp" android:layout_alignParentBottom="true"
-                android:id="@+id/btBuscarProducto"
-                android:layout_marginBottom="41dp"/>
-    </RelativeLayout>
+                android:layout_height="wrap_content"
+                android:id="@+id/button20" app:layout_constraintStart_toEndOf="@+id/etBuscarProducto"
+                android:layout_marginTop="91dp" app:layout_constraintTop_toBottomOf="@+id/btVerProd"
+                app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="235dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="94dp"/>
+        <ListView
+                android:layout_width="395dp"
+                android:layout_height="219dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginBottom="16dp"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintVertical_bias="1.0"
+                android:choiceMode="singleChoice"
+        />
 
+    </android.support.constraint.ConstraintLayout>
 </FrameLayout>

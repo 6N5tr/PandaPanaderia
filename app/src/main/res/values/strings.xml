@@ -1,8 +1,7 @@
 <resources>
     <string name="app_name">PandaPanaderia</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="frg1">Fragmento 1</string>
+     <string name="frg1">Fragmento 1</string>
     <string name="frg2">Fragmento 2</string>
     <string name="frg3">Fragmento 3</string>
     <string name="intro">Hello</string>

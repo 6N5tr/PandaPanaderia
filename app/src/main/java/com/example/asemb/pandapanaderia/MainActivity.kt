@@ -1,5 +1,6 @@
 package com.example.asemb.pandapanaderia
 
+import android.database.sqlite.SQLiteDatabase
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.design.widget.BottomNavigationView
@@ -10,6 +11,8 @@ class MainActivity : AppCompatActivity() {
     var menuinicio=0
 
     val manager = this.supportFragmentManager
+
+
 
 
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
@@ -37,6 +40,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
+
         if (menuinicio ===0) {
             createFragmenteHome()
             menuinicio=1
@@ -44,6 +49,9 @@ class MainActivity : AppCompatActivity() {
 
         main_nav.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
     }
+
+
+
 
     override fun onBackPressed() {
         super.onBackPressed()
